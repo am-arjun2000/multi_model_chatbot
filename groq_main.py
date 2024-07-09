@@ -12,7 +12,7 @@ st.sidebar.title("Settings")
 if "api_key" not in st.session_state:
     st.session_state.api_key = ""
 
-api_key = st.sidebar.text_input("Enter your magic spell", type="password", value=st.session_state.api_key)
+api_key = st.sidebar.text_input("Enter your magic spell✨", type="password", value=st.session_state.api_key)
 if api_key:
     st.session_state.api_key = api_key
 
@@ -20,10 +20,11 @@ if api_key:
 model = st.sidebar.selectbox("Select AI Model", ["Mixtral-8x7b-32768", "Llama3-8b-8192","Llama3-70b-8192","Gemma-7b-It"])
 
 # Streamlit app main content
-st.title("fastest generative ai chat bot")
+st.title("Dialogue pro✨")
+st.subheader("fastest generative ai chat bot")
 # Check if the API key is cached
 if not st.session_state.api_key:
-    st.warning("Please enter your Magic spell in the sidebar")
+    st.warning("Please enter your **Magic spell**✨ in the sidebar")
 else:
     
 
